@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+//keyframes
+@keyframes FadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+}
+//font-face
+@font-face {
+    font-family: "BebasNeueRegular";
+    src: url(SAND/bebasneueregular.ttf);
+    text-transform: uppercase;    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@font-face {
+font-family: 'Montserrat', sans-serif;    
+font-family: 'Source Sans Pro', sans-serif;
+}
+//background image
+.bg {
+  display: block;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+}
+.bg img {
+  position: absolute;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  z-index: -1;
+  
+}
+.container-1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+// .pic-1 .pic-2 .pic-3 .pic-4 {
+//   -webkit-transition: opacity 3s ease-in-out;
+//   -moz-transition: opacity 3s ease-in-out;
+//   -o-transition: opacity 3s ease-in-out;
+//   transition: opacity 3s ease-in-out;
+// }
+
+
+.pic-1, .projectP-1:nth-of-type(1) {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+
+.pic-2, .projectP-1:nth-of-type(2) {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-delay: 8s;
+}
+#h2 { 
+    position: relative;
+    text-transform: uppercase;
+    top: 100%;
+    text-align: center;
+}
+
+//mellanstora rubriker
+.headers-2 {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+//style av länkar till projekt
+.projectP-1 > a {
+    position: absolute;
+    font-size: 1.875rem;
+    font-family: "Montserrat", sans-serif;;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;  //varför funkar inte text-align?
+    margin-top: 45%;
+}
+
+
+//animation FadeInOut av länkar till projekt
+.projectP-1 {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+//"Work"-delen
+.work {  
+    position: relative;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+//"Work"-delen bilder
+.work img {
+    margin: 2rem;
+    max-width: 100%;
+    height: auto;
+    background-size: contain;
+}
+
+
+
+.row-1 {
+    display: flex;
+    flex-direction: column;           //lägger bilder och text i en kolumn
+}
+
+
+
+
+.work p {                   //storlek och line-height på brödtext i mobile
+    font-size: 80%;
+    line-height: 1.3rem; 
+}
+
+
+
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+
+
+nav {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #F8F1EB;
+}
+
+ul a {
+  display: block;
+  padding: 20px;
+  padding-right: 0 !important; /* important skriver över media queries */
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #aaa;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background: #eee;
+}
+
+nav li {
+  float: left;
+  width: 100%;
+  border-right: 1px solid #ddd;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+  
+  .hamburger {
+    padding: 15px;
+    display: block;
+  }
+
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+  
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  
+  .slide-down {
+    height: 200px;
+  }
+    ul {
+  list-style: none;
+  max-width: 1px;
+  margin: 0 auto;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+}
+// .clearfix {
+//     display: flex;
+//     margin: auto;
+//     line-height: 1.475rem;
+//     margin-top: 0.9em;
+//     margin-left: -20%;
+//     text-align: center;
+//     list-style: none;
+//     margin-right: 0.625rem;
+// }
+
+
+//Logo SAND and Stockholm
+.sand {
+    position: absolute;
+    font-family: 'BebasNeueRegular';   
+    margin-top: 10%;
+    font-size: 400%;
+    letter-spacing: 0.5vw;
+    color: #f8f1eb;
+}
+.stockholm {
+    position: absolute;
+    margin-top: 25%;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 100%;
+    letter-spacing: 0.5vw;
+    color: #f8f1eb;
+    }
+//för skärmar med bredd över tablet-storlek
+//@media only screen and (max-width: 768px)
+@media only screen and (min-width: 768px){
+  .sand{
+    font-size: 800%;
+  }
+  .stockholm{
+    font-size: 400%;
+  }
+//   ul {
+//   list-style: none;
+//   max-width: 1px;
+//   margin: 0 auto;
+//   border-left: 1px solid #ddd;
+//   border-right: 1px solid #ddd;
+// }
+.clearfix  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.clearfix li {
+    padding:15px;
+    text-align: center;
+    margin: auto 0;
+
+}
+
+.clearfix li a {
+    text-decoration: none;
+    color:#ffffff;
+    font-family: "Montserrat",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.250rem;
+    letter-spacing: .2em;
+
+}
+
+.row-1 {
+    position: relative;
+    flex-direction: row;    //lägger bilder och text i rader
+    width: 100%; 
+}
+
+
+.row-1 img {
+    max-width: auto;
+    max-height: 21.875em;
+    background-size: contain;   
+}
+
+.row-1 p {
+    background-size: contain;
+    font-size: 85%;
+    line-height: 1.5rem;
+}
+
+}
+// @media screen and (min-width: 1024px) {   //ändrade till 1024px på media queries
+
+
+
+// .row-1 p {                  //storlek och line-height på brödtext
+//     background-size: contain;
+//     font-size: 90%;
+//     line-height: 1.7rem;
+// }
+
+// }
+
+
+
+
+
